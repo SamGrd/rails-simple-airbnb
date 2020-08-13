@@ -1,0 +1,16 @@
+<div class="container">
+<div class="flexbox">
+  <div>Simple Airbnb</div>
+  <div class="btn btn-primary"><%= link_to 'Add Flat', new_flat_path %></div>
+</div>
+</div>
+
+<h1>All our Flats (<%= @flats.length %>)</h1>
+
+<div class="flex-container">
+  <% @flats.each do |flat| %>
+  <h2><%= flat.name %></h2>
+  <p><%= flat.description %></p>
+  </div>
+
+<% end %>
